@@ -1,0 +1,13 @@
+.ButtonContainer {
+  display: flex;
+}
+
+.gnaLogoContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gnaLogo {
+  width: 70px;
+  padding: 0;
+}
