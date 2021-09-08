@@ -36,7 +36,7 @@ export const downloadCSVFileAction = (content, accessToken) => {
         responseType: "blob",
       })
       .then((response) => {
-        FileDownload(response.data, `source_${content}.csv`);
+        FileDownload(response.data, `source_${content}_${new Date()}.csv`);
         dispatch(downloadCSVFileSuccessfulAction());
       })
       .catch((err) => {

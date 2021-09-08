@@ -59,7 +59,7 @@ export default function TableComponent(props) {
     "Initial Payment",
     "In-kind Balance",
     "Monetary Balance",
-    "Final Payment",
+    "In-Kind Payment",
     "Final Payment",
     "Purchased Qty",
     "Purchased Value",

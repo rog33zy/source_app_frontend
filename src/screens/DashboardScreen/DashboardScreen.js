@@ -229,7 +229,7 @@ const DashboardScreen = (props) => {
           isSelectTextField={false}
         />
         <TotalComponent
-          heading="In Kind Payment"
+          heading="In-Kind Payment"
           value={totalSeedQuantityPaid
             .toString()
             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
