@@ -213,7 +213,7 @@ const DashboardScreen = (props) => {
           isSelectTextField={false}
         />
         <TotalComponent
-          heading="Monetary Balance"
+          heading="Cash Balance"
           value={totalAmountOwing
             .toString()
             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}

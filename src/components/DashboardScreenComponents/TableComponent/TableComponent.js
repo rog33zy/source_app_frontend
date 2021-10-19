@@ -58,7 +58,7 @@ export default function TableComponent(props) {
     "Sold Qty",
     "Initial Payment",
     "In-kind Balance",
-    "Monetary Balance",
+    "Cash Balance",
     "In-Kind Payment",
     "Final Payment",
     "Purchased Qty",
@@ -112,7 +112,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     {row.totalNumberOfLoans
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
@@ -120,7 +123,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     {row.totalSeedAmountPurchased
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
@@ -129,7 +135,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     K{" "}
                     {row.totalInitialAmountPaid
                       .toString()
@@ -138,7 +147,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     {(row.totalSeedOwing - row.totalSeedQuantityPaid)
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
@@ -147,7 +159,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     K{" "}
                     {(row.totalAmountOwing - row.totalSubsequentAmountPaid)
                       .toString()
@@ -156,7 +171,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     {row.totalSeedQuantityPaid
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
@@ -165,7 +183,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     K{" "}
                     {row.totalSubsequentAmountPaid
                       .toString()
@@ -174,7 +195,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     {row.totalSeedQuantityPurchased
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
@@ -183,7 +207,10 @@ export default function TableComponent(props) {
                 </StyledTableCell>
 
                 <StyledTableCell align="justify">
-                  <span style={{ fontSize: "12px" }}>
+                  <span
+                    className={styleClasses.textTruncate}
+                    style={{ fontSize: "12px" }}
+                  >
                     K{" "}
                     {row.totalSeedValuePurchased
                       .toString()
