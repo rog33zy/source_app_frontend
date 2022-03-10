@@ -52,7 +52,7 @@ export default function TableComponent(props) {
   const classes = useStyles();
 
   const tableHeadingsList = [
-    "District",
+    "Site",
     "Partner Org",
     "Sales Made",
     "Sold Qty",
@@ -175,8 +175,8 @@ export default function TableComponent(props) {
                     className={styleClasses.textTruncate}
                     style={{ fontSize: "12px" }}
                   >
-                    {row.totalSeedQuantityPaid
-                      .toString()
+                    {(row.totalSeedQuantityPaid
+                      ?? 0).toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
                     MT
                   </span>
@@ -188,7 +188,7 @@ export default function TableComponent(props) {
                     style={{ fontSize: "12px" }}
                   >
                     K{" "}
-                    {row.totalSubsequentAmountPaid
+                    {(row.totalSubsequentAmountPaid ?? 0)
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   </span>
@@ -199,7 +199,7 @@ export default function TableComponent(props) {
                     className={styleClasses.textTruncate}
                     style={{ fontSize: "12px" }}
                   >
-                    {row.totalSeedQuantityPurchased
+                    {(row.totalSeedQuantityPurchased ?? 0)
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
                     MT
@@ -212,7 +212,7 @@ export default function TableComponent(props) {
                     style={{ fontSize: "12px" }}
                   >
                     K{" "}
-                    {row.totalSeedValuePurchased
+                    {(row.totalSeedValuePurchased ?? 0)
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   </span>

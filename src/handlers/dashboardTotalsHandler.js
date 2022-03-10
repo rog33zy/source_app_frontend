@@ -1,6 +1,6 @@
 export const totalsHandler = (loanEntries, relevantParameter) => {
   let initialValue = 0;
   return loanEntries.reduce(function (accumulator, currentValue) {
-    return accumulator + parseFloat(currentValue[relevantParameter]);
+    return accumulator + parseFloat((currentValue[relevantParameter] ?? 0));
   }, initialValue);
 };
