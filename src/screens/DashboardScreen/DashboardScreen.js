@@ -173,7 +173,7 @@ const DashboardScreen = (props) => {
   if (loanEntriesAreLoading) {
     contentToShow = <div className={classes.loader}></div>;
   } else {
-    contentToShow = <TableComponent rows={loanEntries} />;
+    contentToShow = <div className={classes.ChartAndTable}> <TableComponent rows={loanEntries} /> </div>;
   }
 
   return (
