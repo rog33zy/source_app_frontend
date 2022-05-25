@@ -152,6 +152,7 @@ export default function TableComponent(props) {
                     style={{ fontSize: "12px" }}
                   >
                     {(row.totalSeedOwing - row.totalSeedQuantityPaid)
+                      .toFixed(2)
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
                     MT
@@ -165,6 +166,7 @@ export default function TableComponent(props) {
                   >
                     K{" "}
                     {(row.totalAmountOwing - row.totalSubsequentAmountPaid)
+                      .toFixed(2)
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   </span>
@@ -175,8 +177,8 @@ export default function TableComponent(props) {
                     className={styleClasses.textTruncate}
                     style={{ fontSize: "12px" }}
                   >
-                    {(row.totalSeedQuantityPaid
-                      ?? 0).toString()
+                    {(row.totalSeedQuantityPaid ?? 0)
+                      .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
                     MT
                   </span>
